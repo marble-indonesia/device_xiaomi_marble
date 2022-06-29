@@ -28,6 +28,7 @@ import android.view.SurfaceControl;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.dolby.DolbyUtils;
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
@@ -43,6 +44,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DozeUtils.checkDozeService(context);
         RefreshUtils.initialize(context);
         ThermalUtils.startService(context);
+
+        // Pocket
+        PocketService.startService(context);
 
         // Override HDR types
         final IBinder displayToken = SurfaceControl.getInternalDisplayToken();
