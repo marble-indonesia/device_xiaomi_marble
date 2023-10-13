@@ -75,7 +75,12 @@
 
 # Mac Address
 /data/vendor/mac_addr(/.*)? u:object_r:vendor_mac_vendor_data_file:s0
-/vendor/bin/nv_mac u:object_r:vendor_wcnss_service_exec:s0
+
+# Media
+/data/vendor/dolby(/.*)?                                                  u:object_r:vendor_data_file:s0
+/vendor/bin/hw/dolbycodec2                                                u:object_r:mediacodec_exec:s0
+/vendor/bin/hw/vendor\.dolby\.media\.c2@1\.0-service                      u:object_r:mediacodec_exec:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                  u:object_r:hal_dms_default_exec:s0
 
 # Mlipay
 /(vendor|system/vendor)/bin/fidoca                   u:object_r:hal_mfidoca_default_exec:s0

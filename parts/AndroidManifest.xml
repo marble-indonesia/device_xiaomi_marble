@@ -37,7 +37,6 @@
         android:targetSdkVersion="33"/>
 
     <application
-        android:allowBackup="true"
         android:label="@string/app_name"
         android:persistent="true"
         android:defaultToDeviceProtectedStorage="true"
@@ -53,7 +52,7 @@
             </intent-filter>
         </receiver>
 
-        <!--activity
+        <activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
             android:exported="true">
@@ -164,21 +163,10 @@
             android:permission="ThermalService">
         </service>
 
-        <!--service
+        <service
             android:name=".dirac.DiracTileService"
             android:icon="@drawable/ic_qs_dirac"
             android:label="@string/dirac_title"
-            android:exported="true"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service-->
-
-        <service
-            android:name=".dolby.DolbyTileService"
-            android:icon="@drawable/ic_dolby_qs"
-            android:label="@string/dolby_title"
             android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
