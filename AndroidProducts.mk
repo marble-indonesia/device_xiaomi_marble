@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_marble.mk
+    $(LOCAL_DIR)/aosp_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_marble-eng \
-    spark_marble-userdebug \
-    spark_marble-user
+    aosp_marble-eng \
+    aosp_marble-userdebug \
+    aosp_marble-user
