@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_marble.mk
+    $(LOCAL_DIR)/banana_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_marble-eng \
-    aosp_marble-userdebug \
-    aosp_marble-user
+    banana_marble-eng \
+    banana_marble-userdebug \
+    banana_marble-user
