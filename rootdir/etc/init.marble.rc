@@ -49,6 +49,12 @@ on post-fs-data
     # qrtr-lookup
     mkdir /data/vendor/qrtr 0775 system system
 
+    # Setup runtime blkio
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
+
 service citsensor-hal-2-0 /vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
     class late_start
     user system
