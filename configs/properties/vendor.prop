@@ -304,7 +304,6 @@ ro.surface_flinger.support_kernel_idle_timer=true
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.color_mode=0
 persist.sys.sf.native_mode=258
-debug.hwui.renderer=skiavk
 debug.cpurend.vsync=false
 debug.sf.hw=0
 debug.sdm.support_writeback=0
