@@ -53,7 +53,7 @@
             </intent-filter>
         </receiver>
 
-        <!--activity
+        <activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
             android:exported="true">
