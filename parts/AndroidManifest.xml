@@ -119,7 +119,7 @@
         <provider
             android:name=".SummaryProvider"
             android:authorities="org.lineageos.settings.device.summary">
-        </provider-->
+        </provider>
 
         <service
             android:name=".doze.DozeService"
