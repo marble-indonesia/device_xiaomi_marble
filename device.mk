@@ -423,6 +423,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayMarble \
     CarrierConfigResMarble \
     FrameworksResCommon \
+    FuxiSettingsAOSPA \
     FrameworksResOverlayMarble \
     SettingsOverlayMarble \
     SystemUIOverlayMarble \

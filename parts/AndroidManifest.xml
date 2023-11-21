@@ -244,5 +244,10 @@
             android:permission="AodBrightnessService">
         </service>
 
+        <service
+            android:name=".touch.TouchPollingRateService"
+            android:exported="true">
+        </service>
+
     </application>
 </manifest>
