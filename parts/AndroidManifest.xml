@@ -213,7 +213,7 @@
             android:permission="ThermalService">
         </service>
 
-        <!--service
+        <service
             android:name=".dolby.DolbyTileService"
             android:icon="@drawable/ic_dolby_qs"
             android:label="@string/dolby_title"
@@ -222,7 +222,7 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
-        </service!-->
+        </service>
 
         <service
             android:name=".doze.PocketService"
