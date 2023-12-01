@@ -30,3 +30,7 @@ PRODUCT_NAME := blackiron_marble
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
