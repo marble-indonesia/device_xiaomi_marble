@@ -181,6 +181,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V1-ndk_platform \
     android.hardware.graphics.allocator@3.0-impl \
     android.hardware.graphics.allocator@4.0-impl \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
