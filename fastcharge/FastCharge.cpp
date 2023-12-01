@@ -90,3 +90,4 @@ Return<bool> FastCharge::setEnabled(bool enable) {
 } // namespace fastcharge
 } // namespace lineage
 } // namespace vendor
+

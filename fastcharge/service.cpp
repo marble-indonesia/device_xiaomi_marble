@@ -58,3 +58,4 @@ int main() {
   LOG(ERROR) << "FastCharge HAL service is shutting down.";
   return 1;
 }
+
