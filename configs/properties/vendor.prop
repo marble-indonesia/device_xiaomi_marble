@@ -497,3 +497,6 @@ TapSlop=1px
 
 # Telephony
 persist.vendor.radio.redir_party_num=0
+
+# Multi-Gen LRU
+persist.device_config.mglru_native.lru_gen_config=core
