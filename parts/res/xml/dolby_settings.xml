@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!--PreferenceScreen
+<PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/dolby_title">
 
@@ -41,4 +41,4 @@
         android:summary="%s"
         android:icon="@drawable/ic_dirac_preset"/>
 
-</PreferenceScreen-->
+</PreferenceScreen>
