@@ -27,7 +27,6 @@ import android.os.SystemProperties;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.camera.NfcCameraService;
-import org.lineageos.settings.display.ColorService;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.AodBrightnessService;
 import org.lineageos.settings.doze.DozeUtils;
