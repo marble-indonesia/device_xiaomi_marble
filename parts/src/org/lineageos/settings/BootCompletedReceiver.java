@@ -48,30 +48,17 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
 
         // Dirac
-        // try {
-        //    DiracUtils.getInstance(context);
-        // } catch (Exception e) {
-        //    Log.d(TAG, "Dirac is not present in system");
-        // }
+        try {
+            DiracUtils.getInstance(context);
+        } catch (Exception e) {
+            Log.d(TAG, "Dirac is not present in system");
+        }
 
         // Dolby Atmos
         // DolbyUtils.getInstance(context).onBootCompleted();
 
-        // Doze
-        DozeUtils.checkDozeService(context);
-
-        // Refresh Rate
-        RefreshUtils.initialize(context);
-
         // Thermal Profiles
         ThermalUtils.startService(context);
-
-         // Dirac
-         try {
-            DiracUtils.getInstance(context);
-         } catch (Exception e) {
-            Log.d(TAG, "Dirac is not present in system");
-         }
 
         // Doze
         DozeUtils.checkDozeService(context);
