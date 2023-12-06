@@ -65,6 +65,9 @@ function blob_fixup() {
     vendor/etc/camera/pureView_parameter.xml)
         sed -i "s/=\([0-9]\+\)>/=\"\1\">/g" "${2}"
         ;;
+    vendor/lib/libdlbdsservice_v3_6.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefrightdolby.so | vendor/lib64/libdlbdsservice_v3_6.so)
+        "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+        ;;
     esac
 }
 
